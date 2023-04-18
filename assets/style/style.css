@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inputs {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs input {
+    font-size: 30px;
+    padding: 10px 10px;
+    width: 82%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.inputs .Add-Task {
+    width: calc((100% - 82% - 10px));
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #f00;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+}
+.tasks {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+@media (max-width: 767px) {
+    .inputs input {
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .inputs .Add-Task {
+        width: calc(100% - 210px);
+        font-size: 11px;
+        height: 30px;
+    }
+}
+.task {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    margin-block: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete {
+    color: red;
+    border: 1px solid red;
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+}
+.delete:hover, .Clear:hover, .inputs .Add-Task:hover {
+    background-color: red;
+    color: white;
+}
+.done {
+    opacity: 0.4;
+}
+.Clear {
+    margin: 0px 20px;
+    padding: 10px 20px;
+    color: red;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: white;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+}
